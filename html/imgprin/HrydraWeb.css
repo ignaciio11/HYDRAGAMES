@@ -1,0 +1,50 @@
+#login {color: black ;
+    
+    text-decoration: none;
+    padding: 2px;
+    color: black;}   
+
+#tipo {
+    text-decoration: none;
+    color: black;  
+    padding: 10px;
+}
+
+#busqueda{
+    border-radius: 40px;
+    margin-top: 7px;
+    margin-left: 50px;
+}
+
+#busqueda::placeholder{
+    color: #cccbcb;
+    background-color: #F7E8FF;
+    background-color: ;
+}
+
+header {
+    background-color: #B49DFC;
+    padding-bottom:3px ;
+    font-size: 19px;
+}
+
+body {
+    background-color: #F7E8FF;
+}
+
+h1 {
+    padding: 30px;
+}
+
+#linea2 {
+    margin-top: 40px;
+}
+
+#juego {
+    text-decoration: none;
+    color: black;
+}
+
+#descripcion{
+    font-size: 20px;
+}

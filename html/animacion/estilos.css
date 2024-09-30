@@ -1,0 +1,104 @@
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+.contenedor_loader {
+    background-image: url('elden.jpg');
+    background-size: cover;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+}
+
+
+
+.bv{
+    font-size: 70px;
+    color: #ffffff;
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    font-family: 'Playfair Display', serif;
+    animation: cambio-color 8s infinite alternate;
+    opacity: 1; /* Asegurar que el elemento sea visible */
+}
+.bv-sombra{
+    font-size: 70px; /* Tamaño igual al de la palabra principal */
+    color: rgba(16, 16, 16, 0.5); /* Color de la sombra, con transparencia */
+    position: absolute; /* Posición absoluta */
+    top: 30.2%;
+    left: 25.5%;
+    transform: translate(-50%, -50%); /* Centrado perfecto */
+    font-family: 'Playfair Display', serif;
+    z-index: -1;
+    opacity: 0; /* Inicialmente invisible */
+}
+
+
+.hydragames {
+    font-size: 100px;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    font-family: 'Playfair Display', serif;
+    animation: cambio-color 8s infinite alternate;
+    opacity: 1; /* Asegurar que el elemento sea visible */
+}
+
+.hydragames-shadow {
+    font-size: 100px; /* Tamaño igual al de la palabra principal */
+    color: rgba(16, 16, 16, 0.5); /* Color de la sombra, con transparencia */
+    position: absolute; /* Posición absoluta */
+    top: 50.2%;
+    left: 25.5%;
+    transform: translate(-50%, -50%); /* Centrado perfecto */
+    font-family: 'Playfair Display', serif;
+    z-index: -1;
+    opacity: 0; /* Inicialmente invisible */
+}
+
+@keyframes aparecer-shadow {
+    0% {
+        opacity: 0; /* Inicialmente invisible */
+    }
+    100% {
+        opacity: 1; /* Llegar a ser completamente visible */
+    }
+}
+
+/* Aplicar la animación después de 5 segundos */
+.hydragames-shadow {
+    animation: aparecer-shadow 3s forwards; /* 3 segundos de duración */
+    animation-delay: 1s; /* Retraso de 5 segundos */
+}
+
+.bv-sombra{
+    animation: aparecer-shadow 3s forwards; /* 3 segundos de duración */
+    animation-delay: 1s; /* Retraso de 5 segundos */
+}
+
+
+@keyframes cambio-color {
+    0% {
+        color: rgba(16, 16, 16, 0.5); /* Color inicial */
+    }
+    50% {
+        color: #F1B563; /* Color a la mitad de la animación */
+    }
+    100% {
+        color: #FFFEC7; /* Color final */
+    }
+}

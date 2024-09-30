@@ -1,0 +1,378 @@
+
+body {
+color: white;
+background: url('imgsesion/prueba3.png') center center no-repeat; /* Cambia 'red3.jpg' al nombre real de tu imagen */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+    
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    overflow-y: auto;
+    background-attachment: fixed;
+}
+
+.bg-dark-blue {
+    background-color: #000000;
+}
+
+header {
+    background-color: #083156;
+    padding: 10px;
+}
+
+#nav{
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+    position: relative;
+    display: inline-block;
+    padding-top: 9px;
+    
+}
+
+
+#nav:hover{
+    color: #ff0000;
+}
+
+#nav::before {
+    content: "";
+    position: absolute;
+    top: 75%;   
+    width: 75%;
+    height: 2px; 
+    background-color: #ff0000; 
+    transform-origin: center;
+    transform: scaleX(0); 
+    transition: transform 0.6s ease; 
+}
+
+#nav:hover::before {
+    transform: scaleX(1); 
+    transition: transform 0.6s ease;
+}
+
+#navcarro{
+    color: #ffffff;
+    
+}
+
+#care{
+    padding-top: 3px;
+}
+
+#navcarro:hover{
+    color: #ff0000;
+}
+#navcarro::before {
+    content: "";
+    position: absolute;
+    top: 6.5%;   
+    width:20px;
+    height: 2px; 
+    background-color: #ff0000; 
+    transform-origin: center;
+    transform: scaleX(0); 
+    transition: transform 0.3s ease; 
+}
+
+#navcarro:hover::before {
+    transform: scaleX(1); 
+    transition: transform 0.3s ease;
+}
+
+
+header img {
+    height: 32px;
+    margin-right: 20px;
+}
+
+.search-box {
+    position: relative;
+}
+
+.search-box input[type="text"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    border-radius: 0;
+    padding-left: 2.375rem;
+    background: transparent;
+    color: #fff;
+    width: 200px;
+}
+
+.search-box .fa-search {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color: #fff;
+    z-index: 10;
+}
+
+
+
+
+
+
+
+
+#enlace{
+    padding: 0;
+    margin-left: 100px;
+    width: 460px;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.486);
+    border-radius: 20px; /* Puedes ajustar el valor según tu preferencia */
+    padding: 1px 1px;
+}
+
+#resi{
+    opacity: 1;
+}
+
+#enlace:hover{
+    margin-left: 100px;
+    border-radius: black solid 50px;
+    transform: scale(1.1);
+}
+
+#bus::placeholder {
+    color: white;
+  }
+
+
+/* Estilos para la lista desplegable */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Estilos para el botón del menú desplegable */
+.dropbtn {
+    background-color: #4CAF50; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    padding: 16px; /* Espaciado interno del botón */
+    font-size: 16px; /* Tamaño de fuente del botón */
+    border: none; /* Borde del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+/* Estilos para el contenido del menú desplegable */
+.dropdown-content {
+    display: none; /* Por defecto, el contenido está oculto */
+    position: absolute;
+    background-color: #f9f9f9; /* Color de fondo del contenido */
+    min-width: 160px; /* Ancho mínimo del contenido */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Sombra */
+    z-index: 1; /* Índice z para que aparezca sobre otros elementos */
+}
+
+/* Estilos para los enlaces del menú desplegable */
+.dropdown-content a {
+    color: black; /* Color del texto de los enlaces */
+    padding: 12px 16px; /* Espaciado interno de los enlaces */
+    text-decoration: none; /* Sin subrayado */
+    display: block; /* Hace que los enlaces ocupen toda la anchura disponible */
+}
+
+/* Cambia el color de fondo de los enlaces al pasar sobre ellos */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Muestra el contenido cuando se pasa sobre el botón */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Cambia el color del botón al pasar sobre él */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+#iconousuario{
+
+    padding-top: 12px;
+    padding-left: 15px;
+}
+
+
+
+#nom{
+    padding-left:290px ;
+}
+
+#pre{
+    padding-left:50px ;
+}
+
+
+
+
+
+#cestaj{
+    background-color: #213c55ac;
+    width: 794px;
+    height: auto;
+    margin-right: 80px;
+    border-radius: 10px;
+}
+
+#cestap{
+    background-color: #213c55ac;
+    width: 396px;
+    height: 300px;
+    border-radius: 10px;
+    
+}
+
+#espacio{
+    padding: 20px;
+}
+
+#imgcesta{
+
+    border-radius: 10px;
+
+}
+
+#nombrec{
+    padding-left: 100px;
+}
+
+#xenlace{
+    padding-left: 100px;
+    text-decoration: none;
+    
+}
+
+#xenla{
+
+    margin-top: 45px;
+    color: #e30000; 
+}
+
+#tenla{
+    text-decoration: none;
+    color: #e30000; 
+
+}
+
+#precioc{
+    padding-top: 40px;
+}
+
+#pago{
+
+    border-radius: 10px;
+    background:linear-gradient(red, rgb(95, 0, 0));
+    width: 300px;
+    height: 40px;
+    margin-top: 40px;
+    color: #fff; 
+    
+}
+
+#p1{
+    margin-top: 70px;
+
+}
+
+#p2{
+    margin-top: 50px;
+
+}
+
+
+#p3{
+    padding-top: 100px;
+    text-decoration: none;
+    color: #fff; 
+
+}
+
+
+#filac{
+    padding-top: 65px;
+
+
+}
+
+#car{
+    padding-top: 50px;
+}
+
+
+
+
+#despl{
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+
+#despl:hover{
+    color: #ff0000;
+}
+
+#despl::before {
+    content: "";
+    position: absolute;
+    top: 85%;   
+    width: 75%;
+    height: 2px; 
+    background-color: #ff0000; 
+    transform-origin: center;
+    transform: scaleX(0); 
+    transition: transform 0.6s ease; 
+}
+
+#despl:hover::before {
+    transform: scaleX(1); 
+    transition: transform 0.6s ease;
+}
+
+
+#dropdown-btn {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+    position: relative;
+    display: inline-block;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+#dropdown-btn:hover {
+    color: #ff0000;
+}
+
+#dropdown-btn::before {
+    content: "";
+    position: absolute;
+    top: 85%;
+    width: 75%;
+    height: 2px;
+    background-color: #ff0000;
+    transform-origin: center;
+    transform: scaleX(0);
+    transition: transform 0.6s ease;
+}
+
+#dropdown-btn:hover::before {
+    transform: scaleX(1);
+    transition: transform 0.6s ease;
+}
+
+#alc {
+    padding-top: 20px;
+}
